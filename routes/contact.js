@@ -13,4 +13,13 @@ router.get('/', function (req, res) {
             res.json(json.data.contacts.regional);
         });
 })
+
+
+router.get('/contact-details', function (req, res) {
+    fetch(contacturl, settings)
+        .then(res => res.json())
+        .then((json) => {
+            res.json(json);
+        });
+})
 module.exports = router;
