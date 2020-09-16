@@ -16,7 +16,7 @@ app.use('/contact', contact);
 app.use('/notification', notification);
 app.use('/dashboard', dashboard);
 app.get('/', function (req, res) {
-    res.send("welcome to app")
+    res.send("welcome to app from balaji")
 })
 app.listen(process.env.PORT || 3000, () => {
     console.log(`serving website `);
